@@ -77,6 +77,7 @@ y_pred = model.predict(X_test)
 print(y_pred)
 predicted_price = sc.inverse_transform(y_pred)
 
+
 plt.plot(y_test, color = 'red', label = 'Actual Stock Price')
 plt.plot(predicted_price, color = 'green', label = 'Predicted Stock Price')
 plt.title('Google stock price prediction')
