@@ -40,8 +40,8 @@ model.add(LSTM(units=100, return_sequences=True, input_shape=(xTrain.shape[1],1)
 model.add(Dropout(0.2)) #adds a dropout layers to prevent overfitting, 0.2 means 20% of the neurons will be dropped randomly during training
 
 #we repeat this process to create layers for a deeper LSTM architecture 
-model.add(LSTM(units=100, return_sequences=True))
-model.add(Dropout(0.2))
+# model.add(LSTM(units=100, return_sequences=True))
+# model.add(Dropout(0.2))
 
 model.add(LSTM(units=100, return_sequences=True))
 model.add(Dropout(0.2))
